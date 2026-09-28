@@ -29,7 +29,6 @@ class Solution {
             s.add(a);
         }else
             s.get(l).add(root.val);
-        
         pre(root.left,l+1,s);
         pre(root.right,l+1,s);
     }
