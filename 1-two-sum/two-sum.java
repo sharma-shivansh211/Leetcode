@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int n = nums.length;
@@ -13,18 +14,16 @@ class Solution {
         while (left < right) {
             int sum = arr[left][0] + arr[right][0];
             if (sum == target) {
-                return new int[]{
-                    arr[left][1],
-                    arr[right][1]
+                return new int[] {
+                        arr[left][1],
+                        arr[right][1]
                 };
-            }
-            else if (sum < target) {
+            } else if (sum < target) {
                 left++;
-            }
-            else {
+            } else {
                 right--;
             }
         }
-        return new int[]{-1, -1};
+        return new int[] { -1, -1 };
     }
 }
