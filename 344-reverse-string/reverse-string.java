@@ -5,6 +5,5 @@ class Solution {
             s[i] = s[j];
             s[j] = a;
         }
-        //Collections.reverse(s);
     }
 }
